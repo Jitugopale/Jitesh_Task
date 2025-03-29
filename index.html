@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expandable Bundle Options</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+      <div class="heading-container">
+        <hr class="line" />
+        <h1 class="bogo-heading">YAY! It's BOGO</h1>
+        <hr class="line" />
+      </div>
+
+      <form id="bundleForm">
+        <!-- Bundle Option 1 -->
+        <div class="bundle-option">
+          <input
+            type="radio"
+            name="bundle"
+            id="bundle1"
+            value="10.00"
+            data-old-price="24.00"
+            data-discount="10"
+            checked
+          />
+          <label for="bundle1" class="option-label">
+            <div class="option-price">
+              <span class="units">1 Unit&nbsp;&nbsp;<span class="discount">10% OFF</span></span>
+              <span class="new-price">$10.00 USD</span>
+            </div>
+            <div class="option-price">
+              <h4>Standard Price</h4>
+              <span class="old-price">$24.00 USD</span>
+            </div>
+          </label>
+          <!-- Expandable Content -->
+          <div class="expandable-content">
+            <div class="selection-header">
+              <span>Size</span>
+              <span>Colour</span>
+            </div>
+            <div class="selection-row" style="display: flex; flex-direction: row;">
+              <label>#1</label>
+              <select class="size-select">
+                <option value="S" selected>S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+              <select class="color-select">
+                <option value="Black" selected>Black</option>
+                <option value="White">White</option>
+                <option value="Colour">Colour</option>
+              </select>
+            </div>
+            <div class="selection-row" style="display: flex; flex-direction: row;">
+              <label>#2</label>
+              <select class="size-select">
+                <option value="S" selected>S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+              <select class="color-select">
+                <option value="Black" selected>Black</option>
+                <option value="White">White</option>
+                <option value="Colour">Colour</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bundle Option 2 -->
+        <div class="bundle-option most-popular">
+          <input
+            type="radio"
+            name="bundle"
+            id="bundle2"
+            value="18.00"
+            data-old-price="24.00"
+            data-discount="20"
+          />
+          <label for="bundle2" class="option-label">
+            <div class="option-price">
+              <span class="units"
+                >2 Unit&nbsp;&nbsp;<span class="discount">20% OFF</span></span
+              >
+              <span class="new-price">$18.00 USD</span>
+            </div>
+            <div class="option-price">
+              <h4>Standard Price</h4>
+              <span class="old-price">$24.00 USD</span>
+            </div>
+            <span class="popular-badge">MOST POPULAR</span>
+          </label>
+          <!-- Expandable Content -->
+          <div class="expandable-content">
+            <div class="selection-header">
+              <span>Size</span>
+              <span>Colour</span>
+            </div>
+            <div class="selection-row" style="display: flex; flex-direction: row;">
+              <label>#1</label>
+              <select class="size-select">
+                <option value="S" selected>S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+              <select class="color-select">
+                <option value="Black" selected>Black</option>
+                <option value="White">White</option>
+                <option value="Colour">Colour</option>
+              </select>
+            </div>
+            <div class="selection-row" style="display: flex; flex-direction: row;">
+              <label>#2</label>
+              <select class="size-select">
+                <option value="S" selected>S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+              <select class="color-select">
+                <option value="Black" selected>Black</option>
+                <option value="White">White</option>
+                <option value="Colour">Colour</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bundle Option 3 -->
+        <div class="bundle-option">
+          <input
+            type="radio"
+            name="bundle"
+            id="bundle3"
+            value="24.00"
+            data-old-price="24.00"
+            data-discount="30"
+          />
+          <label for="bundle3" class="option-label">
+            <div class="option-price">
+              <span class="units"
+                >3 Unit&nbsp;&nbsp;<span class="discount">30% OFF</span></span
+              >
+              <span class="new-price">$24.00 USD</span>
+            </div>
+            <div class="option-price">
+              <h4>Standard Price</h4>
+              <span class="old-price">$24.00 USD</span>
+            </div>
+          </label>
+          <!-- Expandable Content -->
+          <div class="expandable-content">
+            <div class="selection-header">
+              <span>Size</span>
+              <span>Colour</span>
+            </div>
+            <div class="selection-row" style="display: flex; flex-direction: row;">
+              <label>#1</label>
+              <select class="size-select">
+                <option value="S" selected>S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+              <select class="color-select">
+                <option value="Black" selected>Black</option>
+                <option value="White">White</option>
+                <option value="Colour">Colour</option>
+              </select>
+            </div>
+            <div class="selection-row" style="display: flex; flex-direction: row;">
+              <label>#2</label>
+              <select class="size-select">
+                <option value="S" selected>S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+              <select class="color-select">
+                <option value="Black" selected>Black</option>
+                <option value="White">White</option>
+                <option value="Colour">Colour</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </form>
+
+      <div class="summary">
+        <p class="delivery">Free Delivery</p>
+        <p class="total">Total: <span id="totalValue">$10.00 USD</span></p>
+      </div>
+      <button class="add-to-cart">+ Add to Cart</button>
+      <p class="powered-by">Powered by Pumper</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
