@@ -64,7 +64,7 @@
   }
 
 .bundle-option.selected {
-  border: 2px solid #28a745 !important; 
+  border: 2px solid #28a745; 
   background-color: #f0fff4; 
 }
   
