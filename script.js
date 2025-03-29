@@ -5,8 +5,9 @@ const bundles = document.querySelectorAll(".bundle-option");
 function updateTotal() {
   const selectedOption = document.querySelector('input[name="bundle"]:checked');
   if (!selectedOption) return;
-  const newPrice = selectedOption.value;
-  totalValue.textContent = `$${newPrice} USD`;
+  
+  const newPrice = parseFloat(selectedOption.value) || 0;
+  totalValue.textContent = `$${newPrice.toFixed(2)} USD`;
 }
 
 const bundleOptions = document.querySelectorAll(".bundle-option");
@@ -29,12 +30,15 @@ bundleOptions.forEach((option) => {
 
 bundles.forEach(bundle => {
   bundle.addEventListener("click", function () {
-      bundles.forEach(b => b.classList.remove("selected"));
-      this.classList.add("selected");
-      const radio = this.querySelector("input[type='radio']");
-      if (radio) {
-          radio.checked = true;
-      }
+    bundles.forEach(b => b.classList.remove("selected"));
+    
+    this.classList.add("selected");
+    
+    const radio = this.querySelector("input[type='radio']");
+    if (radio) {
+      radio.checked = true;
+      updateTotal(); 
+    }
   });
 });
 
